@@ -17,13 +17,15 @@ cask "solvane" do
   app "Solvane.app"
 
   # Builds are self-signed and not notarized; clear the quarantine flag.
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/Solvane.app"]
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args: ["-dr", "com.apple.quarantine", "{{appdir}}/Solvane.app"]
   end
 
   zap trash: [
     "~/Library/Application Support/com.itzmail.solvane",
     "~/Library/Preferences/com.itzmail.solvane.plist",
+    "~/Library/Caches/com.itzmail.solvane",
+    "~/Library/HTTPStorages/com.itzmail.solvane",
   ]
 end
