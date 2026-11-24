@@ -1,6 +1,6 @@
 cask "solvane" do
-  version "3.4.4-fork.2"
-  sha256 "8c7e371b409a2024a1fef170c54b82a77271cd0291a8ef5ed387b81bfb64155d"
+  version "3.4.4-fork.3"
+  sha256 "d3e89734abcb819543f32e5d17883324c09cccd64b4eec57ae67bb2cc02670e5"
 
   url "https://github.com/itzmail/vorssaint-utils/releases/download/#{version}/Solvane-#{version.split("-").first}.dmg"
   name "Solvane"
