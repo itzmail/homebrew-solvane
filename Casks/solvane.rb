@@ -1,8 +1,8 @@
 cask "solvane" do
-  version "3.4.4-fork.3"
-  sha256 "d3e89734abcb819543f32e5d17883324c09cccd64b4eec57ae67bb2cc02670e5"
+  version "3.4.4.1"
+  sha256 "d5cf651f1f286be1c8d0d3077587573c642da57e12b8dfa570cc16b65f6fcbe9"
 
-  url "https://github.com/itzmail/vorssaint-utils/releases/download/#{version}/Solvane-#{version.split("-").first}.dmg"
+  url "https://github.com/itzmail/vorssaint-utils/releases/download/#{version}/Solvane-#{version.major_minor_patch}.dmg"
   name "Solvane"
   desc "Menu bar utilities for macOS (unofficial fork of Vorssaint)"
   homepage "https://github.com/itzmail/vorssaint-utils"
